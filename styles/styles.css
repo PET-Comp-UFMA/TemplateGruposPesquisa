@@ -5,6 +5,8 @@
   padding: 0;
 }
 
+/* HEADER */
+
 header {
   background: #fafafa;
   box-shadow: 2px -1px 20px 0px #e1e1e1;
@@ -115,6 +117,36 @@ header .container .dropdown .dropdown-content-produtos a:hover {
 header .container .dropdown .show-dropdown-produto {
   display: block;
 }
+
+/* HEADER */
+
+.section-header {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-header::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #343564;
+  bottom: 20px;
+  left: calc(50% - 30px);
+}
+
+.section-header h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
 
 footer {
   background: #343564;
