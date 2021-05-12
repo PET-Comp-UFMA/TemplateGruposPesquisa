@@ -9,6 +9,7 @@
   <link rel="icon" href="./assets/images/PETComp.png">
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles/styles.css">
@@ -66,16 +67,27 @@
   </header>
 
   <main>
-    <section id="contato">
-      <div  class="section-header"> <!-- para mudar a cor é so acessar essa clase em style.css -->
+    <section id="envio-mensagem">
+      <div class="section-header"> <!-- para mudar a cor é so acessar essa clase em style.css -->
         <h2>contato</h2>
       </div>
 
-      <input type="name" name="nome" id="" value="Nome:*">
+      <div class="mensagem">
+        <div class="nome">
+          <input type="name" name="nome" id="" placeholder="Nome:*" class="nome">
+        </div>
+        <div class="telefone-email">
+          <input type="email" name="email" id="" placeholder="Email:*" class="email">
+          <input type="phone" name="telefone" id="" placeholder="Telefone:*" class="telefone">
+        </div>
+        <div class="texto-mensagem">
+          <input type="text" name="mensagem" id="" placeholder="Mensagem" class="input-mensagem">
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer style="bottom: 0; position: fixed; width: 100%;">
+  <footer>
     <div class="container">
       <div class="logos">
         <img src="/assets/images/Logo Monocromática Branca.png" alt="Logo PETComp UFMA">
