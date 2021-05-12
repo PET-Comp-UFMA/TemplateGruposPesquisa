@@ -147,32 +147,80 @@ footer .logos .divider {
   margin: 0;
 }
 
-footer .contato ul {
+footer .infos ul {
   list-style: none;
 }
 
-footer .contato li {
+footer .infos li {
   display: flex;
   margin: 14px 0;
   padding: 12px;
   width: 200px;
 }
 
-footer .contato img {
+footer .infos img {
   width: 25px;
 }
 
-footer .contato a, footer .contato p {
+footer .infos a, footer .infos p {
   color: #fff;
   margin-left: 20px;
 }
 
-footer .contato .btn-contato {
+footer .infos .btn-contato {
   align-items: center;
   background: #6FA9FF;
   border-radius: 6px;
 }
 
+footer .infos a {
+  text-decoration: none;
+}
+
+footer .sociais ul {
+  list-style: none;
+}
+
+footer .sociais li {
+  display: flex;
+  margin: 14px 0;
+  padding: 12px;
+  width: 200px;
+}
+
+footer .sociais img {
+  width: 25px;
+}
+
+footer .sociais a, footer .sociais p {
+  color: #fff;
+  margin-left: 20px;
+}
+
+footer .sociais .btn-contato {
+  align-items: center;
+  background: #6FA9FF;
+  border-radius: 6px;
+}
+
+footer .infos a {
+  text-decoration: none;
+}
+
+footer .contato {
+  background: #6FA9FF;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  width: 150px;
+}
+
+footer .contato img {
+  width: 25px;
+}
+
 footer .contato a {
+  color: #fff;
   text-decoration: none;
 }
