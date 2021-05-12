@@ -118,13 +118,15 @@ header .container .dropdown .show-dropdown-produto {
 
 footer {
   background: #343564;
-  height: 300px;
+  height: 250px;
+  width: 100%;
 }
 
 footer .container {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
+  padding: 20px;
 }
 
 footer .sobre {
