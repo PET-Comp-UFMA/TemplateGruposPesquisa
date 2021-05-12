@@ -152,6 +152,7 @@ footer {
   background: #343564;
   height: 250px;
   width: 100%;
+  position: relative !important;
 }
 
 footer .container {
