@@ -113,3 +113,10 @@
   height: 400px;
 }
 
+.titulo {
+  color: #545457;
+  font-size: 32px;
+  padding: 60px;
+  text-align: center;
+}
+
