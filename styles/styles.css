@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+p {
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
 /* HEADER */
 
 header {
@@ -159,7 +164,6 @@ footer .container {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
-  padding: 20px;
 }
 
 footer .sobre {
