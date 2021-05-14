@@ -147,6 +147,23 @@
   margin: 30px;
 }
 
+.atividades .images-atividades .card-atividade {
+  align-items: flex-end;
+  background: linear-gradient(45deg,#343564, #0076CD, #01A8FF, #33C3FF);
+  border-radius: 4px;
+  display: flex;
+  height: 250px;
+  margin: 12px 20px;
+  padding: 50px 20px;
+  width: 250px;
+}
+
+.atividades .images-atividades .card-atividade .texto {
+  color: #fff;
+  font-size: 20px;
+  width: 200px;
+}
+
 #parceiros {
   background: #EEEEEE;
   height: 400px;
