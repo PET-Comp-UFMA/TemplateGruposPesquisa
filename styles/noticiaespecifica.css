@@ -12,3 +12,10 @@
     text-align: center;
     padding:35px;
 }
+
+@media (max-width: 800px) {
+  .noticia img {
+    height: 200px;
+    width: 100%;
+  }
+}

@@ -1,8 +1,6 @@
 .noticias{
-  margin-left: 10%;
-  margin-top: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;  
+  padding: 100px;
+  padding-top: 40px;
   border:none;
   text-decoration: none;
   display:flex;
@@ -15,6 +13,7 @@
   flex-direction: row;
   align-items: center;
   background: #eeeeee70;
+  margin: 20px 0;
   padding: 15px;
 }
 .materia > img{
@@ -28,8 +27,12 @@
   padding:20px;
   text-align: justify;
 }
+
+.textoMateria p {
+margin: 20px 0;
+}
 .botao{
-  background: #6FA9B3;
+  background: #33C3FF;
   width: 90px;
   height: 50px;
   font-family: Basic;
@@ -38,7 +41,7 @@
   font-size: 15px;
   line-height: 35px;
   color: #FFFF;
-  text-shadow: 0px 3.66355px 3.66355px rgba(0, 0, 0, 0.25);
+  /* text-shadow: 0px 3.66355px 3.66355px rgba(0, 0, 0, 0.25); */
   border: none;
   border-radius: 2px;
   cursor: pointer;
@@ -46,4 +49,18 @@
 }
 a:visited {
   color: white;
+}
+
+@media (max-width:800px) {
+  .noticias {
+    margin-bottom: 20px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .materia {
+    flex-direction: column;
+    margin: 0 10px;
+  }
+
 }
