@@ -7,9 +7,16 @@
   padding: 20px;
   width: 85%;
 }
-.episodio p {
-  font-size: 20px;
+
+.episodio .texto .description {
+  background: #000838;
+  border-radius: 0 0 8px 8px;
+  color: #fff;
+  font-size: 16px;
   margin: 20px 0;
+  margin-top: -10px;
+  padding: 12px;
+  width: 99.98%;
 }
 
 .episodio-dois {
