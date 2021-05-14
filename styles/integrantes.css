@@ -32,13 +32,17 @@
     flex-wrap: wrap;
 }
 
+/*========================
+ ######## Cards ########
+=========================*/
+
 .card{
     position: relative;
     width: 240px;
     height: 300px;
     border-radius: 7px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 40px;
+    margin: 20px;
     
 }
 .integrantes .discentes{
@@ -46,7 +50,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-}
+
 
 .discentes .card{
     width: 200px;
@@ -168,4 +172,88 @@
     font-size: 12px;
     line-height: 15px;  
     color: #B1B1B1;
+}
+
+.ex .card img{
+    -webkit-filter: grayscale(100%);
+}
+/*========================
+ ######## Modal ########
+=========================*/
+
+.modal{
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: 'Basic', sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+
+}
+
+.modal:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal > div{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    margin: 5% auto;
+    padding: 15px 20px;
+    background: #EFEFEF;
+    border-radius: 5px;
+}
+.modal .modal-conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.modal .modal-figure{
+    height: 200px;
+    width: 200px;
+}
+
+.modal .modal-figure .modal-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.modal .modal-conteiner .modal-text{
+    width: 100%;
+    margin-left: 50px;
+    font-size: 1.2rem;
+}
+.modal .modal-conteiner .modal-text span{
+    font-weight: 400;
+}
+.modal a button{
+    width: 80px;
+    height: 28px;
+    border: 2px solid #fff;
+    background-color: #343564;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff; 
+    
+}
+.modal a button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #343564;
+    border: 2px solid #343564;
 }
