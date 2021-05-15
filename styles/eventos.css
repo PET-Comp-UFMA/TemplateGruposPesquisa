@@ -47,7 +47,7 @@ margin: 20px 0;
   cursor: pointer;
   text-decoration:none;
 }
-a:visited {
+.botao a:visited {
   color: white;
 }
 

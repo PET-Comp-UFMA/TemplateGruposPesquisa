@@ -15,80 +15,115 @@
   <link rel="stylesheet" href="./styles/home.css">
 </head>
 <body>
-  <!-- <header>
-    <div class="container">
-      <div class="logos">
-        <img src="./assets/images/PETComp.png" alt="Logo PETComp UFMA">
-        <div class="divider"></div>
-        <img src="./assets/images/UFMA.png" alt="Logo UFMA" class="ufma-logo">
-      </div>
-
-      <nav id="nav-bar">
-      
-        <button>
-          <a href="./index.html">Início</a>
-        </button>
-
-        <div class="dropdown">
-          <button onclick="DropdownSobre()" class="dropbtn">
-            Conheça o PETComp
-            <span class="material-icons">
-              arrow_drop_down
-            </span>
-          </button>
-          <div id="dropdown-sobre" class="dropdown-content-sobre">
-            <a href="./sobre.html">PETComp</a>
-            <a href="./integrantes.html">Integrantes</a>
-          </div>
-        </div>
-
-        <button><a href="./publicacoes.html">Publicações</a></button>
-
-        <button><a href="./noticias.html">Notícias</a></button>
-
-        <div class="dropdown">
-          <button onclick="DropdownProdutos()" class="dropbtn">
-            Produtos
-            <span class="material-icons">
-              arrow_drop_down
-            </span>
-          </button>
-          <div id="dropdown-produtos" class="dropdown-content-produtos">
-            <a href="#">Jogos</a>
-            <a href="#">Mídias</a>
-            <a href="./produtos-podcomp.html">PodCast</a>
-          </div>
-        </div>
-        
-      </nav>
-
-    </div>
-  </header> -->
 
   <header>
-    <div class="container">
-      <div class="logos">
-        <img src="./assets/images/PETComp.png" alt="Logo PETComp UFMA" class="pet-logo">
-        <div class="divider"></div>
-        <img src="./assets/images/UFMA.png" alt="Logo UFMA" class="ufma-logo">
-      </div>
+    <div class="logos">
+      <a href="./index.html"><img src="./assets/images/PETComp.png" alt="Logo PETComp UFMA" class="pet-logo"></a>
+      <div class="divider"></div>
+      <img src="./assets/images/UFMA.png" alt="Logo UFMA" class="ufma-logo">
     </div>
+    <nav id="nav-bar" class="overlay">
+      <img src="/assets/svg/close_black_24dp.svg" alt="" class="close-btn" onclick="closeMenu()">
+      <div class="overlay-content">
+        <ul>
+          <li>
+            <button>
+              <a href="./index.html">Início</a>
+            </button>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button onclick="DropdownSobre()" class="dropbtn">
+                Conheça o PETComp
+                <span class="material-icons">
+                  arrow_drop_down
+                </span>
+              </button>
+              <div id="dropdown-sobre" class="dropdown-content-sobre">
+                <a href="./sobre.html">PETComp</a>
+                <a href="./integrantes.html">Integrantes</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button><a href="./publicacoes.html">Publicações</a></button>
+          </li>
+          <li>
+            <button><a href="./noticias.html">Notícias</a></button>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button onclick="DropdownProdutos()" class="dropbtn">
+                Produtos
+                <span class="material-icons">
+                  arrow_drop_down
+                </span>
+              </button>
+              <div id="dropdown-produtos" class="dropdown-content-produtos">
+                <a href="./eventos.html">Eventos</a>
+                <a href="./produtos-podcomp.html">PodCast</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <img src="/assets/svg/menu_black_24dp.svg" alt="" class="open-btn" onclick="openMenu()">
   </header>
 
   <main>
-    <section id="banner">
-      <div class="texto-banner">
-        <h1>Seja bem-vindo ao PETComp</h1>
-        <p>Esse é o PETComp do nosso coração que amamos e protegemos</p>
-        <a href="./sobre.html">Conheça</a>
-      </div>
-    </section>
+
+    <section id="slider">
+      <ul class="slider-content">
+        <li class="slider-item fade">
+          <div class="texto-banner">
+            <div class="intro-noticia">
+              <h1>Seja bem-vindo ao novo site PETComp</h1>
+              <p>De cara nova e com muito mais informações!</p>
+              <a href="./integrantes.html">Conheça</a>
+            </div>
+          </div>
+        </li>
+        <li class="slider-item fade">
+          <div class="texto-banner">
+            <div class="intro-noticia">
+              <h1>Conheça nossa história</h1>
+              <p>O grupo existe desde 2007 e desenvolve atividades de Monitoria, Desenvolvimento e Pesquisas</p>
+              <a href="./sobre.html">Conheça</a>
+            </div>
+          </div>
+        </li>
+        <li class="slider-item fade">
+          <div class="texto-banner">
+            <div class="intro-noticia">
+              <h1>Seletivo 2021.1</h1>
+              <p>Veja a lista de integrantes do grupo e conheça os novos participantes</p>
+              <a href="./integrantes.html">Conheça</a>
+            </div>
+          </div>
+        </li>
+        <li class="slider-item fade">
+          <div class="texto-banner">
+            <div class="intro-noticia">
+              <h1>PodComp</h1>
+              <p>Acompanhe todos o episódios já lançados do nosso podcast</p>
+              <a href="./produtos-podcomp.html">Conheça</a>
+            </div>
+          </div>
+        </li>
+        <button class="preview">
+          <img src="./assets/svg/navigate_before-24px.svg" onclick="plusSlides(-1)" alt="">
+        </button>
+        <button class="next">
+          <img src="./assets/svg/navigate_next-24px.svg" onclick="plusSlides(1)" alt="">
+        </button>
+      </ul>
 
     <section id="sobre">
       <div class="resumo-petcomp">
         <div class="images">
           <figure class="gallery__item gallery__item--1">
-            <img src="./assets/images/PETComp.png" alt="Gallery image 1" class="gallery__img">
+            <img src="./assets/images/Marca PETComp.png" alt="Gallery image 1" class="gallery__img">
           </figure>
           <figure class="gallery__item gallery__item--2">
             <img src="./assets/images/PETComp.png" alt="Gallery image 2" class="gallery__img">
@@ -97,7 +132,7 @@
             <img src="./assets/images/PETComp.png" alt="Gallery image 3" class="gallery__img">
           </figure>
           <figure class="gallery__item gallery__item--4">
-            <img src="./assets/images/PETComp.png" alt="Gallery image 4" class="gallery__img">
+            <img src="./assets/images/Marca PETComp.png" alt="Gallery image 4" class="gallery__img">
         </div>
         <div class="text-petcomp">
           <h1>Conheça o PETComp</h1>
@@ -112,7 +147,6 @@
       <div class="atividades">
         <div class="atividades-desenvolvidas">
           <h1>Atividades</h1>
-          <a href="./produtos.html">Veja Mais ></a>
         </div>
         <div class="images-atividades">
           <div class="card-atividade">
@@ -154,12 +188,6 @@
         </div>
       </div>
     </section>
-
-    <section id="parceiros">
-      <div class="titulo">
-        <h1>Parceiros</h1>
-      </div>
-    </section>
   </main>
 
   <footer>
@@ -177,13 +205,13 @@
     </div>
     <div class="sociais">
       <ul>
-        <li><img src="./assets/svg/instagram icon.svg" alt=""><p>@instagram</p></li>
-        <li><img src="./assets/svg/facebook icon.svg" alt=""><p>facebook</p></li>
-        <li><img src="./assets/svg/twitter icon.svg" alt=""><p>@twitter</p></li>
+        <li><img src="./assets/svg/instagram icon.svg" alt=""><a href="https://www.instagram.com/petcompufma/">@PetCompUfma</a></li>
+        <li><img src="./assets/svg/facebook icon.svg" alt=""><a href="/">@PetCompUfma</a></li>
+        <li><img src="./assets/svg/twitter icon.svg" alt=""><a href="https://twitter.com/petcompufma">@PetCompUfma</a></li>
       </ul>
     </div>
     <div class="contato">
-      <img src="/assets/svg/comment icon.svg" alt=""><a href="">Fale Conosco</a>
+      <img src="/assets/svg/comment icon.svg" alt=""><a href="/contato.html">Fale Conosco</a>
     </div>
   </footer>
   <script src="./scripts/script.js"></script>

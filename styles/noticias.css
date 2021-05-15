@@ -40,14 +40,14 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 35px;
-    color: #FFFF;
+    color: #FFF;
     /* text-shadow: 0px 3.66355px 3.66355px rgba(0, 0, 0, 0.25); */
     border: none;
     border-radius: 2px;
     cursor: pointer;
     text-decoration:none;
 }
-a:visited {
+.botao a:visited {
     color: white;
 }
 
@@ -60,6 +60,7 @@ a:visited {
 
   .materia {
     flex-direction: column;
-    margin: 0 10px;
+    margin: 20px;
+    width: 100%;
   }
 }

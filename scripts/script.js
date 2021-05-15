@@ -34,10 +34,34 @@ function DropdownProdutos() {
 
 function openMenu() {
   document.getElementById("nav-bar").style.height = "100%";
-  document.getElementById("nav-bar").style.display = "block";
 }
 
 function closeMenu() {
   document.getElementById("nav-bar").style.height = "0";
-  document.getElementById("nav-bar").style.display = "none";
 } 
+
+var time;
+var slideIndex = 0;
+showSlides();
+
+function clearTime() {
+  clearTimeout(time);
+}
+
+function plusSlides() {
+  showSlides(slideIndex);
+  clearTime();
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slider-item");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  time = setTimeout(showSlides, 4000);
+}
+
